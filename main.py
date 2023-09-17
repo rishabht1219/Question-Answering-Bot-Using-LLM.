@@ -18,9 +18,9 @@ logger.setLevel(logging.INFO)
 handler = RotatingFileHandler(options["log_path"], maxBytes=200000,backupCount=5)
 logger.addHandler(handler)
 
-DIALOGFLOW_PROJECT_ID = 'newagent-hyjn'
-DIALOGFLOW_LANGUAGE_CODE = 'en'
-SESSION_ID = 'me'
+DIALOGFLOW_PROJECT_ID = 'your dialog flow project ID'
+DIALOGFLOW_LANGUAGE_CODE = 'your language code'
+SESSION_ID = 'your session id'
 
 session_client = dialogflow.SessionsClient()
 session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
@@ -75,7 +75,6 @@ async def any(item: Item)->ResponseModel:
         result = await asyncio.wait_for(task, timeout=20)
         return result
     except asyncio.TimeoutError:
-        print("The long operation timed out, but we've handled it.")
         return {"error":"Timeout please rephrase the question! "}
     except Exception as err:
         print(err)
