@@ -14,4 +14,12 @@ This open-source project combines the capabilities of the T5 Transformer model w
 - **Information Retrieval:** Quickly access detailed information from a variety of trusted sources.
 - **Summarization:** Receive summarized answers to your questions, saving time while still gaining valuable insights.
 - **Knowledge Enhancement:** Enhance your knowledge with accurate and reliable information from authoritative sources.
-- **API Integration:** Seamlessly integrate the bot into your own applications and services using the provided API.
+- **API Integration:** Seamlessly integrate the bot into your applications and services using the provided API.
+
+To get started with the Question-Answering Bot, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies mentioned in the project's requirements.
+3. Set up your API keys and credentials for the data sources (Google, Wikipedia).
+4. Run the FastAPI application to start the bot.
+5. Make API calls to the bot with your queries and receive summarized answers.
